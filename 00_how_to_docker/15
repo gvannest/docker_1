@@ -1,0 +1,1 @@
+docker run --link spawning-pool --name roach-warden --detach -p 8081:80 --env PMA_HOST=spawning-pool --env PMA_PORT=3306 phpmyadmin/phpmyadmin
