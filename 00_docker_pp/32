@@ -1,0 +1,6 @@
+# conteiner permet de gerer les containeur docker
+# kill permet de tuer le conteneur
+# $(docker ps -a -q) affiche tout les conteneur actif en mode "quite"
+# prune permet de supprimer tout les conteneur non-actifs
+
+docker container kill $(docker ps -q) && docker container prune

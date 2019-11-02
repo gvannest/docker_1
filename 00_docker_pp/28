@@ -1,0 +1,14 @@
+# service est une commande qui permet de gerer les services dans un environnement
+# --name attribut un nom au service
+# --replicas indique le nombre de fois que le conteneur doit etre répliqué
+# --env change les variables d'environnement suivant ce qui est indiqué dans le
+# dockerhub
+# 42school/marine-squad le nom de l'image
+
+docker service create \
+        --name marine \
+        --replicas 2 \
+        --network overmind \
+        --env OC_USERNAME='rabbit' \
+        --env OC_PASSWD='rabbit_password' \
+        42school/marine-squad

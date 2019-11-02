@@ -1,0 +1,2 @@
+# Liste les volumes créer sur la machine
+docker volume ls

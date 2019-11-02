@@ -1,0 +1,5 @@
+# service est une commande qui permet de gerer les services dans un environnement
+# orchestrer (swarm)
+# ls permet de lister les services
+
+docker service ls

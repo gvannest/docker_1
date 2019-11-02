@@ -1,0 +1,8 @@
+# --format ou -f permet de formatter le contenu du fichier de configuration
+# spawning-pool est le nom du conteneur inspecter
+
+docker inspect -f '{{json .Config.Env}}' spawning-pool
+
+# --interactive ou -i pour afficher le contenu de le terminal
+# spawning-pool nom du container exectuté
+# docker exec -i spawning-pool sh -c 'echo $MYSQL_ROOT_PASSWORD $MYSQL_DATABASE'

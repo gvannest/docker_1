@@ -1,0 +1,14 @@
+# --detach ou -d pour l'execution en arrière plan
+# --link connect 2 conteneur entre eux
+# --publish ou -p pour le port fowarding <port-hôte>|<port-invité>
+# --name pour le nom du conteneur
+# phpmyadmin/phpmyadmin le nom de l'images
+
+docker run \
+        --detach \
+        --link spawning-pool \
+        --publish 8081:80 \
+        --name roach-warden \
+        --env PMA_HOST='spawning-pool' \
+        --env PMA_PORT='3306' \
+    phpmyadmin/phpmyadmin

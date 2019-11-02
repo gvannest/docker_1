@@ -1,0 +1,7 @@
+# swarm permet de gérer un pool de machine
+# init est la commande qui permet d'initialiser un noeud swarm
+# --advertise-addr permet de définir l'addresse ip de la machine maitre
+# `docker-machine ip Char` récupère l'addresse ip de la machine char afin de
+# définir la commande en tant que master
+
+docker swarm init --advertise-addr `docker-machine ip Char`

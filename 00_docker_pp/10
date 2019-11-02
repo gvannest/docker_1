@@ -1,0 +1,3 @@
+# Créer un nouveau volume
+# hatchery equivaux au nom du volume
+docker volume create hatchery

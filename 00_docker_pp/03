@@ -1,0 +1,3 @@
+# Char équivaux au nom de la machine
+# Affiche la commande pour mettre en place l'environnement de la machine
+docker-machine env Char
