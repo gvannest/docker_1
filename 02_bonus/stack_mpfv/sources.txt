@@ -1,0 +1,2 @@
+# https://github.com/verize/docker-pymongo-vue/tree/master/python
+# https://pythonise.com/series/learning-flask/python-flask-uwsgi-introduction
