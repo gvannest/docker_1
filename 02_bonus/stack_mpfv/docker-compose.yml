@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+
+    flask:
+        build: ./python
+        image: flask_img
+        container_name: flask
+        restart: always
+        environment:
+            - APP_NAME=MyFlaskApp
+        expose:
+            - 8080
+
+    mongodb:
+        image: mongo:latest
+        ports:
+            - "27017:27017" 
+        volumes:
+            - ./data/db:/data/db
+
+    nginx:
+        build: ./nginx
+        image: nginx_img
+        container_name: nginx
+        restart: always
+        ports:
+            - "80:80"
