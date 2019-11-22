@@ -1,2 +1,4 @@
 # https://github.com/verize/docker-pymongo-vue/tree/master/python
 # https://pythonise.com/series/learning-flask/python-flask-uwsgi-introduction
+#https://pythonise.com/series/learning-flask/building-a-flask-app-with-docker-compose
+https://stackoverflow.com/questions/40801772/what-is-the-difference-between-docker-compose-ports-vs-expose
