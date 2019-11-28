@@ -2,3 +2,5 @@
 # https://pythonise.com/series/learning-flask/python-flask-uwsgi-introduction
 #https://pythonise.com/series/learning-flask/building-a-flask-app-with-docker-compose
 https://stackoverflow.com/questions/40801772/what-is-the-difference-between-docker-compose-ports-vs-expose
+https://www.digitalocean.com/community/tutorials/how-to-set-up-flask-with-mongodb-and-docker
+https://medium.com/@MaxouMask/secured-mongodb-container-6b602ef67885

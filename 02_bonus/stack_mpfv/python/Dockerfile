@@ -18,4 +18,6 @@ COPY . /python
 
 RUN pip install -r requirements.txt
 
+USER www-data:www-data
+
 CMD ["uwsgi", "app.ini"]
