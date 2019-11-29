@@ -1,8 +1,0 @@
-- add mongodb (pymongo)  + Vue.js-ES6 + Webpack4
-- add volumes to flask app (in docker-compose.yml) if needed: for logs and other needed info
-- improve logs uwsgi,, nginx + app and db
-- CHeck what is Flask/Eve framework
-- check further security on containers
-- custom domain name
-- set SSL protocol (https) with forward 80->443
-- Lire doc docker-compose pour improve
