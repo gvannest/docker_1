@@ -1,0 +1,2 @@
+2019/11/29 12:51:17 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/app.conf:8
+2019/11/29 13:11:37 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/app.conf:8
