@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install -y nodejs
 RUN gem install rails --version 5.2.0
 
 ENV RAILS_ENV development
+
 # Copy applicaiton code
 RUN mkdir -p /opt/app
 COPY ./app /opt/app
