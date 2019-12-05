@@ -1,1 +1,1 @@
-docker service inspect marines
+docker service scale -d marines=20

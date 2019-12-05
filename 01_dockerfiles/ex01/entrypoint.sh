@@ -1,5 +1,4 @@
 #!/bin/bash
-
-su $TS3SERVER_USR
-$TS3SERVER_ROOT/teamspeak3-server_linux_amd64/ts3server_startscript.sh start
+touch $TS3SERVER_ROUTE/.ts3server_license_accepted
+$TS3SERVER_ROUTE/teamspeak3-server_linux_amd64/ts3server_startscript.sh start inifile=ts3server.ini
 

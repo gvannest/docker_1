@@ -1,5 +1,6 @@
 from app import app, db
 from flask import jsonify
+from flask import request
 import os
 
 @app.route("/")
@@ -17,7 +18,7 @@ def index():
     return "Hello from Flask"
 
 
-@application.route('/adduser')
+@app.route('/users')
 def addUser():
     _users = db.users.find()
 
@@ -26,8 +27,8 @@ def addUser():
     for user in _users:
         item = {
             'id': str(user['_id']),
-            'firstname': user['firstname']
-            'lastname': user['lastname']
+            'first_name': user['first_name'],
+            'last_name': user['last_name'],
         }
         data.append(item)
 
@@ -37,16 +38,17 @@ def addUser():
     )
 
 
-@application.route('/adduser', methods=['POST'])
+@app.route('/adduser', methods=['GET'])
 def createUser():
-    data = request.get_json(force=True)
+    fn = request.args.get('firstname')
+    ln = request.args.get('lastname')
     item = {
-        'firstname': data['firstname']
-        'lastname': data['lastname']
+        'first_name': fn,
+        'last_name': ln,
     }
     db.users.insert_one(item)
 
     return jsonify(
         status=True,
-        message='User saved successfully!'
+        message=f'User {fn} {ln} saved successfully!'
     ), 201
