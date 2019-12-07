@@ -1,4 +1,0 @@
-# rmi permet de supprimer les images docker
-# $(docker image ls -q) affiche tout les image docker en mode "quite"
-
-docker rmi $(docker image ls -q)

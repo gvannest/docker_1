@@ -1,6 +1,0 @@
-# service permet de gérer les service lancer avec docker
-# update permet de modifier le service de façon dénominative (suivant name)
-# --replicas permet de modifier le nombre de fois que le service est dupliqué
-# marine le nom du service
-
-docker service update --replicas 20 marine

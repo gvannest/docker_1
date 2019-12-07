@@ -1,7 +1,0 @@
-# network c'est la commande dédier a la gestion des réseau
-# create permet de créer un nouveau réseau
-# --driver permet de choisir le type de réseau
-# "overlay" c'est le nom du type de réseau
-# overmind c'est le nom du réseau
-
-docker network create --driver "overlay" overmind

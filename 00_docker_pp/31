@@ -1,6 +1,0 @@
-# service permet de gérer les service lancer avec docker
-# rm permet de suprimer un service de façon dénominative
-# $(docker service ls -q) permet de lister l'ensemble des service en mode quite
-# cette commande supprime tout les service.
-
-docker service rm $(docker service ls -q)

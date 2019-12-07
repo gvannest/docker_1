@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian
 
 # Update the debian version
 RUN apt-get update -y \

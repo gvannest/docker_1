@@ -1,7 +1,0 @@
-# service est une commande qui permet de gerer les services dans un environnement
-# orchestrer (swarm).
-# logs permet d'afficher les logs d'un service ou d'une task
-# --follow permet de les afficher en continu
-# engineering-bay c'est le nom du containeur
-
-docker service logs --follow engineering-bay

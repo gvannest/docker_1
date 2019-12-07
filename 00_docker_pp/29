@@ -1,5 +1,0 @@
-# service permet de gérer les service lancer avec docker
-# ps permet de lister les service en cours
-# marine le nom du service que l'on souhaite affiché
-
-docker service ps marine

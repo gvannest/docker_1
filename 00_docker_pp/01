@@ -1,2 +1,0 @@
-# Char équivaux au nom de la machine
-docker-machine create --driver virtualbox Char

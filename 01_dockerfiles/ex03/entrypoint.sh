@@ -4,7 +4,7 @@
 #
 # Source : https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/README.md
 
-external_url="192.168.99.100"
+external_url="192.168.99.107"
 directory_ssl="/etc/gitlab/ssl/"
 
 ### This function start the ssh service.
@@ -50,3 +50,6 @@ start_ssh
 #
 gitlab-ctl tail -f
 
+### Wait for SIGTERM
+#
+wait

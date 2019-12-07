@@ -1,9 +1,0 @@
-# -f permet de formatter la sortie {cf: https://docs.docker.com/config/formatting/)
-# {{range .key}}{{.key}}{{end}} Selection la section de l'address ip dans le tableau json
-# overlord nom du container
-
-docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' overlord
-
-# on peux également retrouver les configuration réseau de docker via la commande
-# docker network ls
-# docker network inspect -f '{{range .Containers}}{{.Name}} {{println .IPv4Address}}{{end}}' bridge

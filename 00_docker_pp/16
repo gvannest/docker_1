@@ -1,4 +1,0 @@
-# logs permet d'afficher les logs associé à un container
-# l'option -f permets de suivre la sortie standard du container
-# spawning-pool c'est le nom du conteneur
-docker logs -f spawning-pool

@@ -1,3 +1,0 @@
-# Supprime la docker-machine Aiur
-
-docker-machine rm Aiur

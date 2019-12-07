@@ -1,4 +1,0 @@
-# ps affice l'ensemble des containers actifs sur la vm docker
-# ps affiche l'ensemble des containers actifs et inactifs sur la vm docker
-
-docker ps
